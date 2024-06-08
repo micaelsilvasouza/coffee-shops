@@ -5,15 +5,22 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 5vw;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+:root{
+    --corTema: #5f3a2b;
+    --corAlternativa: #7f3a2b;
+    --corAuxiliar: white;
 }
 
 body{
-    background-color: white;
+    background-color: #eee;
 }
 
 header{
-    background-color: #5f3a2b;
+    background-color: var(--corTema);
     background-image: url("../imagens/fundo-header.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -34,7 +41,7 @@ header > img{
 }
 
 header > h1{
-    color: white;
+    color: var(--corAuxiliar);
     font-size: 2.3em;
     font-weight: 900;
     font-variant: small-caps;
@@ -57,20 +64,23 @@ header nav > a{
     font-size: 0.7em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    color: white;
-    padding: 7px;
+    color: var(--corAuxiliar);
+    padding: 2px;
     transition: 0.2s;
     box-sizing: border-box;
     border: 2px solid transparent;
 }
 
+header nav > a[href="#"]{
+    border-bottom-color: var(--corAuxiliar);
+} 
+
 header nav > a:hover{
-    border-bottom-color: white;
-    border-top-color: white;
+    border-bottom-color: var(--corAuxiliar);
 }
 
 main{
-    color: #5f3a2b;
+    color: var(--corTema);
     text-align: center;
 }
 
@@ -93,13 +103,25 @@ main p {
 
 main section > img{
     width: 49%;
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+main section > img:hover{
+    opacity: 0.7;
+}
+
+main p > img{
+    width: 30px;
+    vertical-align: middle;
 }
 
 main a.linkbtn{
     display: block;
-    background-color: #5f3a2b;
-    color: white;
+    background-color: var(--corTema);
+    color: var(--corAuxiliar);
     width: 50%;
+    max-width: 200px;
     font-weight: 700;
     padding: 5px;
     border-radius: 10px;
@@ -110,4 +132,32 @@ main a.linkbtn{
 
 main a.linkbtn:hover{
     background-color: #7f3a2b;
+}
+
+main .logo-social{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: .2s;
+}
+main .logo-social:hover{
+    transform: scale(0.9);
+}
+
+footer{
+    background-color: var(--corTema);
+    color: var(--corAuxiliar);
+    text-align: center;
+    padding: 10px;
+}
+
+footer > img{
+    width: 50px;
+    height: 50px;
+}
+
+footer > p{
+    font-style: italic;
+    font-size: 0.5em;
 }
