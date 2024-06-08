@@ -5,12 +5,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 16px;
-}
-
-:root{
-    --cor1: #5f3a2b;
-    --cor2: #5f3a2ba1;
+    font-size: 5vw;
 }
 
 body{
@@ -18,7 +13,7 @@ body{
 }
 
 header{
-    background-color: var(--cor1);
+    background-color: #5f3a2b;
     background-image: url("../imagens/fundo-header.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,7 +24,7 @@ header{
     position: relative;
 }
 
-img{
+header > img{
     width: 80vw;
     max-width: 400px;
     position: absolute;
@@ -57,26 +52,62 @@ header nav{
 }
 
 header nav > a{
+    display: inline-block;
     text-decoration: none;
     font-size: 0.7em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
     padding: 7px;
-    border-radius: 10px;
     transition: 0.2s;
+    box-sizing: border-box;
+    border: 2px solid transparent;
 }
 
-main > h1{
+header nav > a:hover{
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+main{
+    color: #5f3a2b;
     text-align: center;
+}
+
+main section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main h1{
     font-size: 2em;
     font-weight: 700;
-    padding: 20px;
+    padding: 10px;
 }
 
-main > p {
+main p {
     width: 80vw;
     margin: auto;
     padding: 10px;
-    text-align: center;
+}
+
+main section > img{
+    width: 49%;
+}
+
+main a.linkbtn{
+    display: block;
+    background-color: #5f3a2b;
+    color: white;
+    width: 50%;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+main a.linkbtn:hover{
+    background-color: #7f3a2b;
 }
