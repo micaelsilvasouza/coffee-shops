@@ -40,19 +40,6 @@ header > img{
     left: 50%;
 }
 
-header > h1{
-    color: var(--corAuxiliar);
-    font-size: 2.3em;
-    font-weight: 900;
-    font-variant: small-caps;
-    text-align: center;
-    width: 200px;
-    margin: auto;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-    vertical-align: middle;
-}
-
 header nav{
     padding-top: 10px;
     text-align: center;

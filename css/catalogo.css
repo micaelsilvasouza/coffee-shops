@@ -5,3 +5,36 @@
     --corAlternativa: #7f3a2b;
     --corAuxiliar: white;
 }
+
+header{
+    min-height: 0;
+    background-image: url("../imagens/fundo-header-catalogo.jpg");
+    background-attachment: local;
+}
+
+
+header > h1{
+    color: var(--corAuxiliar);
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000000b0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+main div{
+    border: 2px solid var(--corTema);
+    padding: 3px;
+    margin: 3px;
+    display: inline-block;
+}
+
+main div > img{
+    width: 60px;
+}
+
+main div > p {
+    font-size: 0.7em;
+    width: 100px;
+}
