@@ -26,6 +26,8 @@ header > h1{
 main article{
     border-bottom: 2px solid var(--corTema);
     padding: 5px;
+    max-width: 800px;
+    margin: auto;
 }
 
 main article > h1{
